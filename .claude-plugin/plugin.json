@@ -1,0 +1,7 @@
+{
+  "name": "release",
+  "version": "0.1.0",
+  "description": "Client delivery log: one entry per PR with an approved hours estimate and the Claude tokens spent, published as a shareable page.",
+  "author": { "name": "Peter Dirickson" },
+  "repository": "https://github.com/piclez/release-skill"
+}

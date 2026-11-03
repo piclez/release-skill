@@ -1,0 +1,11 @@
+{
+  "name": "release-skill",
+  "owner": { "name": "Peter Dirickson" },
+  "plugins": [
+    {
+      "name": "release",
+      "source": "./",
+      "description": "Client delivery log: one entry per PR with an approved hours estimate and the Claude tokens spent, published as a shareable page."
+    }
+  ]
+}
