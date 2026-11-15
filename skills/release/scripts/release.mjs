@@ -234,6 +234,9 @@ const commands = {
       }
       const command = event.tool_input?.command ?? "";
       if (!/\bgh\s+pr\s+create\b/.test(command)) return;
+      // Contexto's lane runner sets this for its headless workers, which can't ask for the hours.
+      // The entry is added after the PR opens.
+      if (process.env.CONTEXTO_LANE === "1") return;
       const clients = loadClients();
       if (!clients.length) return;
       const target = prCreateTarget(command);
